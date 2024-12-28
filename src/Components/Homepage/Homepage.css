@@ -1,0 +1,502 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.video_heading_section_blur {
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.top_Heading {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  padding: 30px 50px;
+  width: max-content;
+  font-size: 45px;
+  white-space: pre-wrap;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 0.8s;
+}
+
+.top_Heading .para {
+  font-size: 18px;
+}
+
+.investing_heading {
+  font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+
+}
+
+.moolah_offers_cover_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.cards_wrapper {
+  background-color: white;
+}
+
+.cards {
+  position: relative;
+  z-index: 100;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+
+}
+
+.cards h2,
+.cards p {
+  margin-top: 20px;
+}
+
+.cards_cover {
+  width: 24%;
+  background-color: var(--blue);
+  border-radius: 10px;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 200px;
+}
+
+.cards_cover:hover {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.funds {
+  --c: white;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.funds span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.funds:hover {
+  color: var(--primary);
+}
+
+.funds:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.funds span:nth-child(1) {
+  --n: 1;
+}
+
+.funds span:nth-child(2) {
+  --n: 2;
+}
+
+.funds span:nth-child(3) {
+  --n: 3;
+}
+
+.funds span:nth-child(4) {
+  --n: 4;
+}
+
+.image_with_sections {
+  padding: 30px;
+}
+
+
+.bards_width_background {
+  background-color: white;
+  /* border-radius: 10px; */
+  color: black;
+  text-align: start;
+}
+
+.card_shadow {
+  padding: 50px 20px;
+}
+
+.last_3_cards_cover {
+  width: 100%;
+  height: 300px;
+  padding-top: 150px;
+  box-shadow: rgba(132, 132, 132, 0.5) 0px 10px 20px, rgba(111, 111, 111, 0.23) 0px 6px 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.last_3_cards_cover_child {
+  box-shadow: rgba(135, 135, 135, 0.5) 0px 6px 12px -2px, rgba(159, 158, 158, 0.23) 0px 3px 7px -3px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.last_3_cards_cover_child:hover {
+  margin-top: 50px;
+}
+
+.card_image1 {
+  width: 30px;
+}
+
+.section_3_cover {
+  background-color: white;
+
+}
+
+.section_3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+  /* padding-left: 30px; */
+  gap: 10px;
+}
+
+.section_3_part_1 {
+  width: 100%;
+  color: black;
+  text-align: start;
+}
+
+.section_3_part_2 {
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  animation: box-shadow 0.5s ease-in;
+  border: 1px solid var(--primary);
+
+}
+
+.section_3_part_3 {
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  animation: box-shadow 0.5s ease-in;
+  border: 1px solid var(--primary);
+  margin-bottom: 20px;
+}
+
+.section_3_part_2:hover,
+.section_3_part_3:hover {
+  border: 1px solid var(--blue);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.funds_2 {
+  cursor: pointer;
+  --c: white;
+  color: var(--primary);
+  font-size: 16px;
+  border: 0.3em solid var(--primary);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.funds_2 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--blue);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.funds_2:hover {
+  color: white;
+  border: 0.3em solid var(--blue);
+
+}
+
+.funds_2:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.funds_2 span:nth-child(1) {
+  --n: 1;
+}
+
+.funds_2 span:nth-child(2) {
+  --n: 2;
+}
+
+.funds_2 span:nth-child(3) {
+  --n: 3;
+}
+
+.funds_2 span:nth-child(4) {
+  --n: 4;
+}
+
+.funds_3 {
+  cursor: pointer;
+  --c: white;
+  color: var(--primary);
+  font-size: 16px;
+  border: 0.3em solid var(--blue);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.funds_3 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.funds_3:hover {
+  color: white;
+  border: 0.3em solid var(--primary);
+
+}
+
+.funds_3:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.funds_3 span:nth-child(1) {
+  --n: 1;
+}
+
+.funds_3 span:nth-child(2) {
+  --n: 2;
+}
+
+.funds_3 span:nth-child(3) {
+  --n: 3;
+}
+
+.funds_3 span:nth-child(4) {
+  --n: 4;
+}
+
+.section_4 {
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+  color: black;
+}
+
+.section_4_part_2 {
+  text-align: center;
+  min-height: 350px;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.section_4_part_2 p {
+  min-height: 150px;
+  padding: 20px;
+}
+
+.section_4_part_2 p,
+.section_4_part_2 h4 {
+  padding: 20px;
+}
+
+.Risk_management {
+  width: 50%;
+}
+
+.Risk_management_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: start;
+  gap: 20px;
+}
+
+.Risk_management_card_list {
+  width: 23%;
+  margin: 20px 20px;
+  border: 1px solid var(--primary);
+  padding: 20px;
+  
+}
+.Risk_management_card_list p{
+  min-height: 300px;
+}
+@media (max-width:768px) {
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+  }
+
+  .moolah_offers_cover_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .video_heading_section_blur {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top_Heading {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding: 30px 50px;
+    width: max-content;
+    font-size: 45px;
+    white-space: pre-wrap;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.8s;
+  }
+
+  .top_Heading .para {
+    font-size: 18px;
+  }
+
+
+
+  .cards_cover {
+    width: 100%;
+  }
+
+  .section_3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    /* padding-left: 30px; */
+    gap: 10px;
+  }
+
+  .section_3_part_1 {
+    width: 100%;
+    color: black;
+    text-align: start;
+  }
+
+  .section_3_part_2 {
+    width: 100%;
+    color: black;
+    border-radius: 5px;
+    animation: box-shadow 0.5s ease-in;
+    border: 1px solid var(--primary);
+    margin-bottom: 20px;
+  }
+
+  .section_3_part_3 {
+    width: 100%;
+    color: black;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 20px;
+    animation: box-shadow 0.5s ease-in;
+    border: 1px solid var(--primary);
+    margin-bottom: 20px;
+  }
+  .Risk_management {
+    width: 100%;
+  }
+  
+  .Risk_management_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .Risk_management_card_list {
+    width: 100%;
+    margin: 20px 20px;
+    border: 1px solid var(--primary);
+    padding: 20px;
+    
+  }
+  .Risk_management_card_list p{
+    min-height: min-content;
+  }
+
+}
