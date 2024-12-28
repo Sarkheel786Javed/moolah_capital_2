@@ -9,7 +9,7 @@ function Homepage() {
       {/* ///////////////////////// section 1//////////////////////////// */}
       <div className="video-container">
         <video autoPlay muted loop className="background-video">
-          <source src="iStock-583581070_3.mp4" />
+          <source src="./iStock-583581070_3.mp4" />
         </video>
         <div className="content">
           <div className="video_heading_section_blur">
