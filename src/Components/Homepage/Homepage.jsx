@@ -3,13 +3,15 @@ import "./Homepage.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { title } from "framer-motion/client";
+
+
 function Homepage() {
   return (
     <div clasName="primary p-2">
       {/* ///////////////////////// section 1//////////////////////////// */}
       <div className="video-container">
         <video autoPlay muted loop className="background-video">
-          <source src="./iStock-583581070_3.mp4" />
+          <source src="iStock-583581070_3.mp4" />
         </video>
         <div className="content">
           <div className="video_heading_section_blur">
@@ -35,7 +37,7 @@ function Homepage() {
       <div className="d-flex justify-content-center align-items-center overflow-hidden cards_wrapper">
         <div className="cards">
           <motion.div
-            initial={{ 
+            initial={{
               opacity: 0,
               y: 150,
             }}
@@ -59,86 +61,72 @@ function Homepage() {
       </div>
       {/* /////////////////////// section 3 //////////////////////// */}
       <div className="section_3_cover">
-        <div className="section_3">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div className="section_3_part_1">
-                  <div className="">
-                    <div className="">
-                      <h1 className="">Moolah Capital Funds</h1>
-                    </div>
-                    <div className="">
-                      <p className="">
-                        Moolah offers a small set of theme-based funds, each
-                        build on proven invest strategies and supported by
-                        cutting-edge technology. Our approach leverages both
-                        traditional finantional anatysis and advanced machine
-                        learning models to optimize returns.
-                      </p>
-                    </div>
-
-                    <div className="section_3_part_3">
-                      <h4 className="text-start">
-                        We do it for you - we choose your investments
-                      </h4>
-                      <p className="text-start">
-                        We'll match you with investments that fit how you feel
-                        about risk. Then we manage them every step of the way.
-                        You'll also get expert investment guidance from real
-                        people if you need it.
-                      </p>
-                      <div className="d-flex justify-content-center ">
-                        <div className="funds_2">
-                          Invest now
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <div className="section_3">
+        <div className="container-fluid">
+          <div className="section_3_part_3">
+            <h1>Moolah Capital Funds</h1>
+            <p>
+              Moolah offers a small set of theme-based funds, each built on
+              proven investment strategies and supported by cutting-edge
+              technology. Our approach leverages both traditional financial
+              analysis and advanced machine learning models to optimize returns.
+            </p>
+          </div>
+          <div className="row">
+            {/* Left Box */}
+            <div className="col-12 col-md-6">
+              <div className="section_3_part_2">
+                <img
+                  src="Puzzle.svg"
+                  alt="We do it for you"
+                  className="img-fluid"
+                />
+                <h4>We do it for you - we choose your investments</h4>
+                <p>
+                  We'll match you with investments that fit how you feel about
+                  risk. Then we manage them every step of the way. You'll also
+                  get expert investment guidance from real people if you need
+                  it.
+                </p>
+                <button className="funds_31">Invest now
+                <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                </button>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div className="section_3_part_2 ">
-                  <h4 className="text-start">
-                    Do it yourself - choose your own investments
-                  </h4>
-                  <p className="text-start">
-                    Buils your own portfolio using our individual
-                    <br />
-                    funds, with different themes, market segments,
-                    <br />
-                    financial goal to choose from.
-                    <br />
-                    <br />
-                    our keep things simple and pick one of our 6
-                    <br />
-                    Moolah Future funds. Each Moolah Future
-                    <br />
-                    funds mixes interest paying assets and coins to
-                    <br />
-                    balance risk and reward. you pick the one that
-                    <br />
-                    suits your goal and attitude to risk.
-                  </p>
-                  <div>
-                    <div className="funds_2">
-                      Invest now
+            </div>
+            {/* Right Box */}
+            <div className="col-12 col-md-6">
+              <div className="section_3_part_2">
+                <img
+                  src="puzzle2.png"
+                  alt="Do it yourself"
+                  className="img-fluid"
+                />
+                <h4>Do it yourself - choose your own investments</h4>
+                <p>
+                  Build your own portfolio using our individual funds, with
+                  different themes, market segments, and financial goals to
+                  choose from.
+                  <br />
+                  Or keep things simple and pick one of our 6 Moolah Future
+                  funds. Each Moolah Future fund mixes interest-paying assets
+                  and coins to balance risk and reward. You pick the one that
+                  suits your goal and attitude to risk.
+                </p>
+                <button className="funds_31">Invest now
+                <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
       {/* ////////////////////////////// section 4 ////////////////////////// */}
       <div className="d-flex justify-content-center align-items-center ">
         <div className="section_4 pt-5 ">

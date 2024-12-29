@@ -6,6 +6,7 @@
 }
 
 .background-video {
+  /* jkjk */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,10 +46,7 @@
   font-size: 18px;
 }
 
-.investing_heading {
-  font-size: calc((1.4 - 1) * 1.2vw + 1rem);
 
-}
 
 .moolah_offers_cover_section {
   width: 100%;
@@ -64,7 +62,7 @@
 .cards {
   position: relative;
   z-index: 100;
-  margin-top: 50px;
+  margin: 50px 30px;
   margin-bottom: 50px;
   width: 80%;
   border: none;
@@ -74,6 +72,10 @@
   align-items: center;
   gap: 4%;
 
+}
+
+.investing_heading {
+  font-size: calc((1.4 - 1) * 1.2vw + 1rem);
 }
 
 .cards h2,
@@ -158,12 +160,13 @@
 .bards_width_background {
   background-color: white;
   /* border-radius: 10px; */
+  padding: 0 30px;
   color: black;
   text-align: start;
 }
 
 .card_shadow {
-  padding: 50px 20px;
+  padding: 0px 20px;
 }
 
 .last_3_cards_cover {
@@ -195,83 +198,41 @@
 }
 
 .section_3 {
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
-  padding: 30px;
-  /* padding-left: 30px; */
-  gap: 10px;
-}
-
-.section_3_part_1 {
-  width: 100%;
-  color: black;
-  text-align: start;
-}
-
-.section_3_part_2 {
-  width: 100%;
-  color: black;
-  border-radius: 5px;
-  padding: 20px;
-  animation: box-shadow 0.5s ease-in;
-  border: 1px solid var(--primary);
-
+  align-items: flex-start;
+  padding: 0 30px;
 }
 
 .section_3_part_3 {
-  width: 100%;
   color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section_3_part_2 {
+  color: black;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  animation: box-shadow 0.5s ease-in;
-  border: 1px solid var(--primary);
   margin-bottom: 20px;
-}
-
-.section_3_part_2:hover,
-.section_3_part_3:hover {
-  border: 1px solid var(--blue);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.funds_2 {
-  cursor: pointer;
-  --c: white;
-  color: var(--primary);
-  font-size: 16px;
-  border: 0.3em solid var(--primary);
-  border-radius: 0.5em;
-  width: 12em;
-  height: 3em;
-  text-align: center;
-  line-height: 3em;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
-}
-
-.funds_2 span {
-  position: absolute;
-  width: 25%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-  background-color: var(--blue);
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
-  z-index: -1;
 }
 
-.funds_2:hover {
-  color: white;
-  border: 0.3em solid var(--blue);
-
+.section_3_part_2 img {
+  /* max-width: 100%; */
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
+
 
 .funds_2:hover span {
   transform: translateY(0) scale(2);
@@ -293,14 +254,72 @@
   --n: 4;
 }
 
+.funds_31 {
+  cursor: pointer;
+  --c: white;
+  color: var(--primary);
+  font-size: 16px;
+  border: 1px solid var(--blue);
+  border-radius: 0.5em;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  /* margin: 1em; */
+}
+
+.funds_31 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.funds_31:hover {
+  color: white;
+  border: 1px solid var(--primary);
+
+}
+
+.funds_31:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.funds_31 span:nth-child(1) {
+  --n: 1;
+}
+
+.funds_31 span:nth-child(2) {
+  --n: 2;
+}
+
+.funds_31 span:nth-child(3) {
+  --n: 3;
+}
+
+.funds_31 span:nth-child(4) {
+  --n: 4;
+}
+
 .funds_3 {
   cursor: pointer;
   --c: white;
   color: var(--primary);
   font-size: 16px;
-  border: 0.3em solid var(--blue);
+  border: 1px solid var(--blue);
   border-radius: 0.5em;
-  width: 12em;
+  width: 100%;
+  /* width: 12em; */
   height: 3em;
   text-align: center;
   line-height: 3em;
@@ -351,7 +370,7 @@
 }
 
 .section_4 {
-  padding: 30px;
+  padding: 50px 30px;
   background-color: white;
   width: 100%;
   color: black;
@@ -367,7 +386,7 @@
 
 .section_4_part_2 p {
   min-height: 150px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .section_4_part_2 p,
@@ -382,21 +401,23 @@
 .Risk_management_card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: center;
   align-items: start;
   gap: 20px;
 }
 
 .Risk_management_card_list {
-  width: 23%;
-  margin: 20px 20px;
+  width: 32%;
+  margin: 20px 0px;
   border: 1px solid var(--primary);
   padding: 20px;
-  
+
 }
-.Risk_management_card_list p{
+
+.Risk_management_card_list p {
   min-height: 300px;
 }
+
 @media (max-width:768px) {
   .video-container {
     position: relative;
@@ -470,16 +491,17 @@
     width: 100%;
     color: black;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
     animation: box-shadow 0.5s ease-in;
     border: 1px solid var(--primary);
     margin-bottom: 20px;
   }
+
   .Risk_management {
     width: 100%;
   }
-  
+
   .Risk_management_card {
     display: flex;
     flex-wrap: wrap;
@@ -487,15 +509,16 @@
     align-items: center;
     gap: 20px;
   }
-  
+
   .Risk_management_card_list {
     width: 100%;
     margin: 20px 20px;
     border: 1px solid var(--primary);
     padding: 20px;
-    
+
   }
-  .Risk_management_card_list p{
+
+  .Risk_management_card_list p {
     min-height: min-content;
   }
 
