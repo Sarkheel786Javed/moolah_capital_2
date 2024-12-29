@@ -35,7 +35,7 @@ function Homepage() {
       <div className="d-flex justify-content-center align-items-center overflow-hidden cards_wrapper">
         <div className="cards">
           <motion.div
-            initial={{
+            initial={{ 
               opacity: 0,
               y: 150,
             }}
