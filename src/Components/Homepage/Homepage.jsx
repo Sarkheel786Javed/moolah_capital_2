@@ -303,7 +303,7 @@ function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-5">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div className="Risk_management">
                   <h1>Cybersecurity and Risk Management</h1>
                   <p>
